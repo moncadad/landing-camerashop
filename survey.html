@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://github.com/moncadad/landing-camera/blob/main/images/logo2.png?raw=true">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera - Survey</title>
+    <link rel="stylesheet" href="css/survey.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <a href="/index.html"><img class=""src="https://github.com/moncadad/landing-camera/blob/main/images/logo2.png?raw=trueg"></a>
+            <h1 id="title" class="text-center">Let Us Know Survey</h1>
+            <p id="description" class="description-text-center">Help us get the brands you like, fill the survey for a chance to win!</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email" >Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="email@domain.com" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">Instagram Username</label>
+                <input type="text" name="age" id="number" min="21" max="99" class="form-control" placeholder="Username" >
+            </div>
+
+            <div class="form-group">
+                <p>What's your favorite camera brand?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Camera Brands</option>
+                    <option value="Canon">Canon</option>
+                    <option value="Leica">Leica</option>
+                    <option value="Nikon">Nikon</option>
+                    <option value="Fujifil">Fujifilm</option>
+                    <option value="Pentax">Pentax</option>
+                    <option value="Other">Other</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Will it be digital or film for you?</p>
+                <label>
+                    <input class="input-radio" name="user-recommend" value="digital" type="radio">Digital
+                </label>
+                <label>
+                    <input class="input-radio" name="user-recommend" value="film" type="radio">Film
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">How often do you shoot on a weekly basis?</label>
+                <input type="number" name="age" id="number" min="1" max="7" class="form-control" placeholder="Days per week">
+            </div>        
+
+            <div class="form-group">
+                <p>What's your style? <span class="clue">(Check all that apply)</span></p>
+                <label><input class="input-checkbox" name="prefer" value="bar" type="checkbox">Street Photography</label>
+                <label><input class="input-checkbox" name="prefer" value="bbq" type="checkbox">Portrait Photography</label>
+                <label><input class="input-checkbox" name="prefer" value="hangout" type="checkbox">Landscape Photography</label>
+                <label><input class="input-checkbox" name="prefer" value="home" type="checkbox">Still Life Photography</label>
+            </div>
+
+            <div class="form-group">
+                <p>Story time, let us know about your favorite memory photographing. </p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Let us know here..."></textarea>
+            </div>
+          <div class="form-group"><button class="submit-button" type="submit" id="submit">Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>
